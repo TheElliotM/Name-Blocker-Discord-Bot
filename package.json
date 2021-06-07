@@ -1,0 +1,17 @@
+{
+  "name": "nameblockerdiscordbot",
+  "version": "1.0.0",
+  "description": "Blocks discord users by name",
+  "main": "nameblocker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon nameblocker.js"
+  },
+  "author": "Xcallibur",
+  "license": "ISC",
+  "dependencies": {
+    "discord-buttons": "^3.1.1",
+    "discord.js": "^12.5.3",
+    "mysql2": "^2.2.5"
+  }
+}
