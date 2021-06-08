@@ -21,7 +21,7 @@ client.on('guildMemberAdd', async member => {
                 shouldBan = member.user.username.toLowerCase() === entry.name.toLowerCase()
             if (shouldBan === true) {
                 await member.ban()
-                await member.guild.systemChannel.send(`🔨 ${member.user.tag} got the ban hammer!`)
+                await member.guild.systemChannel.send(`🔨 ${member.user.tag} got the ban hammer!`).catch((err) => { console.log("Error: " + err) })
                 break
             }
         }
